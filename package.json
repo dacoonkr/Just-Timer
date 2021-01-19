@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -16,7 +17,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cname": "echo jstimer.dacon.xyz > build\\CNAME",
+    "nojekyll": "echo > build\\.nojekyll",
+    "predeploy": "npm run build && npm run cname && npm run nojekyll",
+    "deploy": "gh-pages --add --dotfiles -d build"
   },
   "eslintConfig": {
     "extends": [

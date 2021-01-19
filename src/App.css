@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Font1';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/JUA.TTF') format('truetype')
+}
+
+.h1 {
+    font-family: 'Font1';
+    font-size: 45px;
+
+    position: absolute;
+    left: 50vw;
+    margin-left: -122.36px;
+}
