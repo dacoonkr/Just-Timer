@@ -5,11 +5,84 @@
     src: url('./fonts/JUA.TTF') format('truetype')
 }
 
-.h1 {
-    font-family: 'Font1';
-    font-size: 45px;
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+.App {
+    height: 100vh;
+}
+
+.Bar {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.Title {
+    font-family: 'Font1';
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ScrambleType {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-left: 2rem;
+}
+
+.Icon {
+    width: 2.5rem;
+    height: 2.5rem; 
+}
+
+.Page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     position: absolute;
-    left: 50vw;
-    margin-left: -122.36px;
+    top: 0;
+}
+
+.Timer {
+    font-family: 'LAB디지털';
+    font-size: 15rem;
+}
+
+.Timer:before {
+    content: '88';
+    position: absolute;
+    z-index: -1;
+}
+
+.Timer > span {
+    margin-top: 6rem;
+    font-size: 7rem;
+}
+
+.Timer > span:before {
+    content: '88';
+    margin-top: 6rem;
+    position: absolute;
+    margin-top: 6rem;
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+      font-size: 10px;
+    }
 }

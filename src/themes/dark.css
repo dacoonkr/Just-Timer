@@ -1,0 +1,24 @@
+.App {
+    /*background-color: #111111;*/
+}
+
+.Title {
+    color: white;
+}
+
+.ScrambleType {
+    background: #404040;
+    color: #bfbfbf;
+}
+
+.Timer:before {
+    color: #281214;
+}
+
+.Timer > span:before {
+    color: #281214;
+}
+
+.Timer {
+    color: #ff0000;
+}
