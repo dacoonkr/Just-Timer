@@ -1,5 +1,5 @@
-.App {
-    /*background-color: #111111;*/
+.App:before {
+    background-color: #111111;
 }
 
 .Title {

@@ -2,18 +2,25 @@
     font-family: 'Font1';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/JUA.TTF') format('truetype')
+    src: url('./fonts/JUA.woff') format('woff')
 }
 
 @font-face {
-    font-family: 'LAB디지털';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'digital';
+    src: url('./fonts/digital-7.woff') format('woff');
 }
 
 .App {
     height: 100vh;
+    z-index: -2;
+}
+
+.App:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
 }
 
 .Bar {
@@ -47,7 +54,7 @@
     height: 2.5rem; 
 }
 
-.Page {
+.Content {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -58,17 +65,20 @@
 }
 
 .Timer {
-    font-family: 'LAB디지털';
+    font-family: 'digital';
     font-size: 15rem;
 }
 
 .Timer:before {
+    font-family: 'digital';
     content: '88';
     position: absolute;
     z-index: -1;
 }
 
 .Timer > span {
+    font-family: 'digital';
+    
     margin-top: 6rem;
     font-size: 7rem;
 }
@@ -79,6 +89,8 @@
     position: absolute;
     margin-top: 6rem;
     z-index: -1;
+
+    font-family: 'digital';
 }
 
 @media screen and (max-width: 600px) {
